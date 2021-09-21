@@ -197,7 +197,10 @@ body {
     font-weight: 600;
 }
 
-
+.user-left {
+    background: white;
+    border-bottom: 1px solid rgba(180, 180, 180, 0.24);
+}
 
 
 
