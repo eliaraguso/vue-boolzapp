@@ -26,13 +26,9 @@ body {
     display: flex;
 }
 
+/* Left side */
 #container-left {
     width: 35%;
-}
-
-#container-right {
-    width: 65%;
-    background: brown;
 }
 
 #nav-left {
@@ -49,7 +45,29 @@ body {
     background: coral;
     height: 5%;
 }
+
 #users {
     background: white;
     height: 75%;
+}
+
+/* Right side */
+#container-right {
+    width: 65%;
+    background: brown;
+}
+
+#nav-right {
+    background: violet;
+    height: 10%;
+}
+
+#chat {
+    background: wheat;
+    height: 82%;
+}
+
+#message {
+    background: #009688;
+    height: 8%;
 }
