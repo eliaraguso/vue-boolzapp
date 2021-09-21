@@ -25,7 +25,6 @@ body {
     height: 95%;
     margin: auto;
     display: flex;
-    min-height: 768px;
 }
 
 .nav-buttons {
@@ -151,7 +150,55 @@ body {
     height: 70%;
     border: 1px solid rgba(105, 105, 105, 0.123);
     border-radius: 3px;
+    margin-right: 5px;
 }
+
+#search-section a {
+    height: 70%;
+    background-color: white;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #b6b9bb;
+    margin-left: 5px;
+    padding: 0 20px;
+    border: 1px solid rgba(105, 105, 105, 0.123);
+
+}
+
+/* Contacts section */
+#contacts {
+    overflow-y: scroll;
+}
+#contacts ul {
+    list-style: none;
+}
+#contacts li {
+    height: 100px;
+    background: #e9ebeb;
+}
+
+.user-container {
+    height: 100%;
+    display: flex;
+}
+
+.user-container img {
+    height: 70%;
+    border-radius: 50%;
+    padding: 0 20px;
+    align-self: center;
+}
+
+.user-name {
+    padding-top: 10px;
+    font-weight: 600;
+}
+
+
+
 
 
 
@@ -176,6 +223,7 @@ body {
 #chat {
     background-image: url("../img/mine.jpg");
     height: 84%;
+    overflow-y: scroll;
 }
 
 

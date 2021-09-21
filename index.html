@@ -24,6 +24,7 @@
 
             <!-- Parte sinistra -->
             <div id="container-left">
+                <!-- Nav section -->
                 <div id="nav-left">
                     <div class="user-nav">
                         <img class="img-user" src="./img/avatar_io.jpg" alt="">
@@ -42,6 +43,7 @@
 
                     </div>
                 </div>
+                <!-- Notifies section -->
                 <div id="notifies">
                     <a id="notify-link" href="#">
                         <div id="notify-bell">
@@ -55,11 +57,25 @@
                         </div>
                     </div>
                 </div>
+                <!-- Search section -->
                 <div id="search-section">
-                    <input id="search-user" type="text">
+                    <a href="#">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <input id="search-user" type="text" placeholder="Cerca o inizia una nuova chat">
                 </div>
+                <!-- Contacts section -->
                 <div id="contacts">
-
+                    <ul>
+                        <li v-for="(contact, index) in contacts" v-bind:key="index">
+                            <!-- <div class="user-container"> -->
+                                <!-- <img src="./img/avatar_1.jpg" alt=""> -->
+                                <div class="user-name">{{contact.name}}</div>
+                            <!-- </div> -->
+                        </li>
+                        
+                    </ul>
+                    
                 </div>
             </div>
 
@@ -68,6 +84,10 @@
                 <div id="nav-right">
                     <div class="user-nav">
                         <img class="img-user" src="./img/avatar_io.jpg" alt="">
+                        <div id="user-info">
+                            <div>Michele</div>
+                            <div>Ultimo accesso oggi alle</div>
+                        </div>
                     </div>
                     <div class="nav-buttons">
                         <a href="#">
@@ -103,7 +123,6 @@
     </div>
     <script src="./js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <script src="./js/contacts.js"></script>
 </body>
 
 </html>
