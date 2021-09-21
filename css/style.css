@@ -11,6 +11,7 @@
 body {
     height: 100vh;
     background: linear-gradient(0deg,#dcdbd1 85%, #009688 85%);
+    font-family: 'Lato', sans-serif;
 }
 
 #root {
@@ -20,21 +21,57 @@ body {
 }
 
 #container {
-    width: 80%;
+    width: 85%;
     height: 95%;
     margin: auto;
     display: flex;
+    min-height: 768px;
 }
 
+.nav-buttons {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-buttons a {
+    text-decoration: none;
+    color:#b1b1b1;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    height: 70%;
+}
+
+.nav-buttons a i {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 130%;
+}
+
+.img-user {
+    height: 100%;
+    border-radius: 50%;
+}
+
+.user-nav {
+    height: 70%;
+    border-radius: 50%;
+}
 /* Left side */
 #container-left {
     width: 35%;
     border-right: 1px solid lightgrey;
+    background: lightpink;
 }
 
 #nav-left {
-    height: 10%;
+    height: 8%;
     background: #eaeaea;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #notifies {
@@ -47,10 +84,20 @@ body {
     height: 5%;
 }
 
-#users {
+#contacts {
     background: white;
-    height: 75%;
+    height: 77%;
 }
+
+.nav-buttons {
+    padding-right: 2%;
+}
+
+
+
+
+
+
 
 /* Right side */
 #container-right {
@@ -61,12 +108,15 @@ body {
 
 #nav-right {
     background: #eaeaea;
-    height: 10%;
+    height: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #chat {
     background-image: url("../img/mine.jpg");
-    height: 82%;
+    height: 84%;
 }
 
 #message {
