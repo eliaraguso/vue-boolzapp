@@ -29,20 +29,21 @@ body {
 /* Left side */
 #container-left {
     width: 35%;
+    border-right: 1px solid lightgrey;
 }
 
 #nav-left {
     height: 10%;
-    background: blueviolet;
+    background: #eaeaea;
 }
 
 #notifies {
-    background: chartreuse;
+    background: #8edafc;
     height: 10%;
 }
 
 #search {
-    background: coral;
+    background: #fafafa;
     height: 5%;
 }
 
@@ -55,19 +56,20 @@ body {
 #container-right {
     width: 65%;
     background: brown;
+    border-left: 1px solid lightgrey;
 }
 
 #nav-right {
-    background: violet;
+    background: #eaeaea;
     height: 10%;
 }
 
 #chat {
-    background: wheat;
+    background-image: url("../img/mine.jpg");
     height: 82%;
 }
 
 #message {
-    background: #009688;
+    background: #f3eeea;
     height: 8%;
 }
