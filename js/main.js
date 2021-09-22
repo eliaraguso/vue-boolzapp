@@ -88,6 +88,13 @@ const app = new Vue({
     methods: {
         selectIndex : function(index){
             this.selectedIndex = index
+        },
+        messageStatus : function() {
+            if (this.status == "sent") {
+                return "sent"
+            } else {
+                return "received"
+            }
         }
     }
     
