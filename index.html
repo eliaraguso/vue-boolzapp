@@ -104,7 +104,7 @@
                 <!-- Section chat display -->
                 <div id="chat">
                     <div id="chat-box">
-                        <div v-for="(message, index) in contacts[0].messages" :key="index" class="message sent">{{message.message}}</div>
+                        <div v-for="(message, index) in contacts[selectedIndex].messages" :key="index" class="message sent">{{message.message}}</div>
                     </div>
 
 
