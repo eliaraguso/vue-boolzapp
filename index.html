@@ -69,9 +69,9 @@
                     <ul>
                         <li v-for="(contact, index) in contacts" v-bind:key="index">
                             <div class="user-container user-left">
-                            <img :src="'./img/avatar' + contact.avatar +'.jpg'" alt="contact profile img">
-                            <div class="user-name">{{contact.name}}</div>
-                            <!-- </div> -->
+                                <img :src=`./img/avatar${contact.avatar}.jpg` alt="contact profile img">
+                                <div class="user-name">{{contact.name}}</div>
+                                <!-- </div> -->
                         </li>
 
                     </ul>
@@ -80,6 +80,7 @@
 
             <!-- Parte destra -->
             <div id="container-right">
+                <!-- Section Navbar -->
                 <div id="nav-right">
                     <div class="user-nav">
                         <img class="img-user" src="./img/avatar_io.jpg" alt="">
@@ -98,10 +99,23 @@
                         <a href="#">
                             <i class="fas fa-ellipsis-v"></i>
                         </a>
-
                     </div>
                 </div>
-                <div id="chat"></div>
+                <!-- Section chat display -->
+                <div id="chat">
+                    <div id="chat-box">
+                        <div class="message sent">sadads</div>
+                        <div class="message received">ciao</div>
+                        <div class="message sent">sadads</div>
+                        <div class="message sent">sadads</div>
+                        <div class="message received">ciao</div>
+                        <div class="message received">ciao</div>
+                        
+                    </div>
+
+
+                </div>
+                <!-- Section write message -->
                 <div id="message">
                     <a href="#">
                         <i class="far fa-smile"></i>
