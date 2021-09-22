@@ -58,6 +58,7 @@ body {
     height: 70%;
     border-radius: 50%;
     display: flex;
+    margin-left: .625rem;
 }
 
 
@@ -69,7 +70,6 @@ body {
 #container-left {
     width: 35%;
     border-right: .0625rem solid lightgrey;
-    background: lightpink;
     overflow-y: hidden;
 }
 
@@ -171,7 +171,6 @@ body {
 }
 #contacts li {
     height: 6.25rem;
-    background: #e9ebeb;
 }
 
 .user-container {
@@ -192,11 +191,12 @@ body {
 }
 
 .user-left {
-    background: white;
     border-bottom: .0625rem solid rgba(180, 180, 180, 0.24);
 }
 
-
+#contacts li.active {
+    background-color:  #e9ebeb;
+}
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1 */
     color: rgb(148, 148, 148);
@@ -209,7 +209,6 @@ body {
 /* Right side */
 #container-right {
     width: 65%;
-    background: brown;
     border-left: .0625rem solid lightgrey;
 }
 

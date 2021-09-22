@@ -67,7 +67,7 @@
                 <!-- Contacts section -->
                 <div id="contacts">
                     <ul>
-                        <li v-for="(contact, index) in contacts" v-bind:key="index">
+                        <li v-for="(contact, index) in contacts" :key="index" :class="index == 0 ? 'active' : null" >
                             <div class="user-container user-left">
                                 <img :src=`./img/avatar${contact.avatar}.jpg` alt="contact profile img">
                                 <div class="user-name">{{contact.name}}</div>
@@ -104,13 +104,7 @@
                 <!-- Section chat display -->
                 <div id="chat">
                     <div id="chat-box">
-                        <div class="message sent">sadads</div>
-                        <div class="message received">ciao</div>
-                        <div class="message sent">sadads</div>
-                        <div class="message sent">sadads</div>
-                        <div class="message received">ciao</div>
-                        <div class="message received">ciao</div>
-                        
+                        <div v-for="(message, index) in contacts[0].messages" :key="index" class="message sent">{{message.message}}</div>
                     </div>
 
 
