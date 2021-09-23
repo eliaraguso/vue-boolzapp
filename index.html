@@ -67,7 +67,8 @@
                 <!-- Contacts section -->
                 <div id="contacts">
                     <ul>
-                        <li v-for="(contact, index) in contacts" :key="index" :class="index == selectedIndex ? 'active' : null" @click="selectIndex(index)" >
+                        <li v-for="(contact, index) in contacts" :key="index"
+                            :class="index == selectedIndex ? 'active' : null" @click="selectIndex(index)">
                             <div class="user-container user-left">
                                 <img :src=`./img/avatar${contact.avatar}.jpg` alt="contact profile img">
                                 <div class="user-name">{{contact.name}}</div>
@@ -104,15 +105,21 @@
                 <!-- Section chat display -->
                 <div id="chat">
                     <div id="chat-box">
-                        <div v-for="(message, index) in contacts[selectedIndex].messages" :key="index" class="message" :class="message.status">
-                            {{message.message}}
+                        <div v-for="(message, index) in contacts[selectedIndex].messages" :key="index" class="message"
+                            :class="message.status">
+                            <div>
+                                {{message.message}}
+                            </div>
+                            <div class="message-time">
+                                {{message.date}}
+                            </div>
                         </div>
                     </div>
 
 
                 </div>
                 <!-- Section write message -->
-                <div id="message">
+                <div id="message-input-section">
                     <a href="#">
                         <i class="far fa-smile"></i>
                     </a>

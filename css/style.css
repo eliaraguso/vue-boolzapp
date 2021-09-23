@@ -245,6 +245,7 @@ body {
     padding: .9375rem 1.25rem;
     margin: .25rem 0;
     border-radius: .5rem;
+    font-weight: 600;
 
 }
 
@@ -257,8 +258,16 @@ body {
     background-color: white;
 }
 
+.message-time {
+    /* background-color: #009688; */
+    text-align: end;
+    color: grey;
+    font-weight: 500;
+    font-size: 0.8rem;
+    padding-top: 1rem;
+}
 /* Message section */
-#message {
+#message-input-section {
     background: #f3eeea;
     display: flex;
     justify-content: space-evenly;
@@ -266,13 +275,13 @@ body {
     height: 5rem;
 }
 
-#message a {
+#message-input-section a {
     text-decoration: none;
     color: #6b7376;
     font-size: 1.4rem;
 }
 
-#message input {
+#message-input-section input {
     width: 80%;
     height: 70%;
     border-radius: .375rem;
