@@ -96,7 +96,8 @@ const app = new Vue({
             this.newMessage = document.getElementById("newMessage").value
             this.contacts[this.selectedIndex].messages.push(
                 {
-                    date: Date(),
+                    // date: Date(),
+                    date: dayjs().format('DD/MM/YYYY HH:mm:ss'),
                     message: this.newMessage,
                     status: "sent"
                 }
@@ -106,13 +107,14 @@ const app = new Vue({
             setTimeout(() => {
                 this.contacts[this.selectedIndex].messages.push(
                     {
-                        date: Date(),
+                        // date: Date(),
+                        date: dayjs().format('DD/MM/YYYY HH:mm:ss'),
                         message: "ciao",
                         status: "received"
                     }
                 )
             }, 1000);
-            
+
         }
 
     }
