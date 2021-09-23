@@ -22,7 +22,7 @@
         <!-- Container principale -->
         <div id="main-container">
 
-            <!-- Parte sinistra -->
+            <!--------------------------------- Parte sinistra ------------------------------------->
             <div id="container-left">
                 <!-- Nav section -->
                 <div id="nav-left">
@@ -79,7 +79,7 @@
                 </div>
             </div>
 
-            <!-- Parte destra -->
+            <!------------------------------- Parte destra ------------------------------->
             <div id="container-right">
                 <!-- Section Navbar -->
                 <div id="nav-right">
@@ -87,7 +87,7 @@
                         <img class="img-user" :src=`./img/avatar${contacts[selectedIndex].avatar}.jpg` alt="">
                         <div id="user-info">
                             <div class="user-name">{{contacts[selectedIndex].name}}</div>
-                            <div class="user-time">Ultimo accesso oggi alle</div>
+                            <div class="user-time">Ultimo accesso oggi alle {{todayTime}}</div>
                         </div>
                     </div>
                     <div class="nav-buttons">
