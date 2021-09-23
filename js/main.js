@@ -86,6 +86,7 @@ const app = new Vue({
         selectedIndex: 0,
         newMessage: ""
 
+
     },
     methods: {
         selectIndex: function (index) {
@@ -100,7 +101,20 @@ const app = new Vue({
                     status: "sent"
                 }
             )
+        },
+        newReply: function () {
+            setTimeout(() => {
+                this.contacts[this.selectedIndex].messages.push(
+                    {
+                        date: Date(),
+                        message: "ciao",
+                        status: "received"
+                    }
+                )
+            }, 1000);
+            
         }
+
     }
 
 });
