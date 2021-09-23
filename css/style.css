@@ -99,6 +99,7 @@ body {
     align-items: center;
     background: #8edafc;
     height: 6.25rem;
+    padding: 0 1.25rem;
 }
 
 .fa-bell-slash {
@@ -111,6 +112,7 @@ body {
      background-color: white;
      border-radius: 50%;
      height: fit-content;
+     margin-right: 1.25rem;
 }
 
 #notify-text-up {
@@ -122,10 +124,6 @@ body {
     font-size: 0.9rem;
     text-decoration: underline;
     color: gray;
-}
-
-#notify-link {
-    padding: 0 .625rem;
 }
 
 /* Search user section */

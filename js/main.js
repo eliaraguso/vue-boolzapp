@@ -85,9 +85,8 @@ const app = new Vue({
         ],
         selectedIndex: 0,
         newMessage: "",
-        todayDate:dayjs().format('DD/MM/YYYY HH:mm:ss'),
-        todayTime:dayjs().format('HH:mm:ss')
-
+        todayDate: dayjs().format('DD/MM/YYYY HH:mm:ss'),
+        todayTime: dayjs().format('HH:mm:ss')
 
     },
     methods: {
@@ -116,8 +115,8 @@ const app = new Vue({
                     }
                 )
             }, 1000);
-
         }
+       
 
     }
 

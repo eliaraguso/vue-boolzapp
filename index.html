@@ -45,16 +45,17 @@
                 </div>
                 <!-- Notifies section -->
                 <div id="notifies">
-                    <a id="notify-link" href="#">
-                        <div id="notify-bell">
-                            <i class="fas fa-bell-slash"></i>
-                        </div>
-                    </a>
+
+                    <div id="notify-bell">
+                        <i class="fas fa-bell-slash"></i>
+                    </div>
                     <div id="notify-text-up">
                         Ricevi notifiche di nuovi messaggi
-                        <div id="notify-text-down">
-                            Attiva notifiche desktop
-                        </div>
+                        <a href="#">
+                            <div id="notify-text-down">
+                                Attiva notifiche desktop
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <!-- Search section -->
@@ -62,7 +63,7 @@
                     <a href="#">
                         <i class="fas fa-search"></i>
                     </a>
-                    <input id="search-user" type="text" placeholder="Cerca o inizia una nuova chat">
+                    <input id="search-user" type="text" placeholder="Cerca o inizia una nuova chat" >
                 </div>
                 <!-- Contacts section -->
                 <div id="contacts">
@@ -70,7 +71,7 @@
                         <li v-for="(contact, index) in contacts" :key="index"
                             :class="index == selectedIndex ? 'active' : null" @click="selectIndex(index)">
                             <div class="user-container user-left">
-                                <img :src=`./img/avatar${contact.avatar}.jpg` alt="contact profile img">
+                                <img :src=`img/avatar${contact.avatar}.jpg` alt="contact profile img">
                                 <div class="user-name">{{contact.name}}</div>
                                 <!-- </div> -->
                         </li>
@@ -135,7 +136,7 @@
     </div>
     <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <script src="./js/main.js"></>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
