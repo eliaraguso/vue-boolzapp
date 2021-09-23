@@ -67,7 +67,7 @@
                 <!-- Contacts section -->
                 <div id="contacts">
                     <ul>
-                        <li v-for="(contact, index) in contacts" :key="index" :class="index == selectedIndex ? 'active' : null" @click="selectedIndex = index" >
+                        <li v-for="(contact, index) in contacts" :key="index" :class="index == selectedIndex ? 'active' : null" @click="selectIndex(index)" >
                             <div class="user-container user-left">
                                 <img :src=`./img/avatar${contact.avatar}.jpg` alt="contact profile img">
                                 <div class="user-name">{{contact.name}}</div>
@@ -83,9 +83,9 @@
                 <!-- Section Navbar -->
                 <div id="nav-right">
                     <div class="user-nav">
-                        <img class="img-user" src="./img/avatar_io.jpg" alt="">
+                        <img class="img-user" :src=`./img/avatar${contacts[selectedIndex].avatar}.jpg` alt="">
                         <div id="user-info">
-                            <div>Gigi</div>
+                            <div>{{contacts[selectedIndex].name}}</div>
                             <div>Ultimo accesso oggi alle</div>
                         </div>
                     </div>
