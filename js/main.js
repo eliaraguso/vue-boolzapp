@@ -84,21 +84,22 @@ const app = new Vue({
             },
         ],
         selectedIndex: 0,
-        message: ""
+        newMessage: ""
     },
     methods: {
         selectIndex : function(index){
             this.selectedIndex = index
         },
         addMessage : function() {
+            this.newMessage = document.getElementById("newMessage").value
             this.contacts[this.selectedIndex].messages.push(
                 {
                     date: "ciao",
-                    message: "ciccio",
-                    status : "received"
+                    message: this.newMessage,
+                    status : "sent"
                 }
             )
-            console.log(this.contacts[this.selectedIndex].messages[3])
+            console.log(this.contacts[this.selectedIndex].messages[0])
         }
     }
     
