@@ -63,13 +63,14 @@
                     <a href="#">
                         <i class="fas fa-search"></i>
                     </a>
-                    <input id="search-user" type="text" placeholder="Cerca o inizia una nuova chat" >
+                    <input id="search-user" type="text" placeholder="Cerca o inizia una nuova chat"
+                        v-model="searchLetters" @input="isVisible">
                 </div>
                 <!-- Contacts section -->
                 <div id="contacts">
                     <ul>
                         <li v-for="(contact, index) in contacts" :key="index"
-                            :class="index == selectedIndex ? 'active' : null" @click="selectIndex(index)">
+                            :class="index == selectedIndex ? 'active' : null" @click="selectIndex(index)" v-show="contact.visible">
                             <div class="user-container user-left">
                                 <img :src=`img/avatar${contact.avatar}.jpg` alt="contact profile img">
                                 <div class="user-name">{{contact.name}}</div>
@@ -134,6 +135,7 @@
 
         </div>
     </div>
+
     <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script src="./js/main.js"></script>
