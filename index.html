@@ -106,7 +106,7 @@
                     </div>
                 </div>
                 <!-- Section chat display -->
-                <div id="chat">
+                <div id="chat" v-chat-scroll="{always: false, smooth: true}">
                     <div id="chat-box">
                         <div v-for="(message, index) in contacts[selectedIndex].messages" :key="index" class="message"
                             :class="message.status" @click="">
@@ -143,6 +143,7 @@
 
     <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-chat-scroll/dist/vue-chat-scroll.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 

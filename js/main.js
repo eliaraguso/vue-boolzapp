@@ -123,7 +123,7 @@ const app = new Vue({
                 contact.visible = contact.name.toLowerCase().includes(this.searchLetters.toLowerCase())
             }
             );
-        }
+        },
     }
 
 });
