@@ -103,6 +103,7 @@ const app = new Vue({
                     status: "sent"
                 }
             )
+            this.newMessage = "";
         },
         newReply: function () {
             setTimeout(() => {

@@ -68,14 +68,14 @@ body {
 
 /* ---------------------------------Left side------------------------------------------ */
 #container-left {
-    width: 35%;
+    width: 30%;
     border-right: .0625rem solid lightgrey;
     overflow-y: hidden;
 }
 
 /* Navbar left */
 #nav-left {
-    height: 5rem;
+    height: 4rem;
     background: #eaeaea;
     display: flex;
     align-items: center;
@@ -168,7 +168,7 @@ body {
     list-style: none;
 }
 #contacts li {
-    height: 6.25rem;
+    height: 5rem;
 }
 
 .user-container {
@@ -206,14 +206,13 @@ body {
 
 /* -----------------------------Right side------------------------------- */
 #container-right {
-    width: 65%;
-    border-left: .0625rem solid lightgrey;
+    width: 70%;
 }
 
 /* Navbar right */
 #nav-right {
     background: #eaeaea;
-    height: 5rem;
+    height: 4rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -228,7 +227,7 @@ body {
 /* Chat section */
 #chat {
     background-image: url("../img/mine.jpg");
-    height: calc(100% - 10rem);
+    height: calc(100% - 9rem);
     overflow-y: scroll;
 }
 
@@ -274,7 +273,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 5rem;
+    height: 4rem;
 }
 
 #message-input-section a {
