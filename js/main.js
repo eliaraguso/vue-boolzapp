@@ -88,7 +88,6 @@ const app = new Vue({
         todayDate: dayjs().format('DD/MM/YYYY HH:mm:ss'),
         todayTime: dayjs().format('HH:mm:ss'),
         searchLetters: ""
-
     },
     methods: {
         selectIndex: function (index) {
@@ -119,11 +118,11 @@ const app = new Vue({
             }, 1000);
         },
         isVisible: function () {
-            this.contacts.forEach(function (contact) {
+            this.contacts.forEach((contact) => {
                 contact.visible = contact.name.toLowerCase().includes(this.searchLetters.toLowerCase())
             }
             );
-        },
+        }
     }
 
 });
