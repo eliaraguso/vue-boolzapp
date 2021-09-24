@@ -248,7 +248,7 @@ body {
     margin: .25rem 0;
     border-radius: .5rem;
     font-weight: 600;
-
+    position: relative;
 }
 
 .message.sent {
@@ -265,8 +265,23 @@ body {
     color: grey;
     font-weight: 500;
     font-size: 0.8rem;
-    padding-top: 1rem;
+    padding-top: 0.6rem;
 }
+
+.message-menu {
+    background-color: #8edafc;
+    position: absolute;
+    right: 0;
+    bottom: -4.4rem;
+    z-index: 10;
+}
+
+.message-menu div{
+    padding: 10px;
+}
+
+
+
 /* Message section */
 #message-input-section {
     background: #f3eeea;

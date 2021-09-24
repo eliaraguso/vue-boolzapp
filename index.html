@@ -70,7 +70,8 @@
                 <div id="contacts">
                     <ul>
                         <li v-for="(contact, index) in contacts" :key="index"
-                            :class="index == selectedIndex ? 'active' : null" @click="selectIndex(index)" v-show="contact.visible">
+                            :class="index == selectedIndex ? 'active' : null" @click="selectIndex(index)"
+                            v-show="contact.visible">
                             <div class="user-container user-left">
                                 <img :src=`img/avatar${contact.avatar}.jpg` alt="contact profile img">
                                 <div class="user-name">{{contact.name}}</div>
@@ -108,12 +109,16 @@
                 <div id="chat">
                     <div id="chat-box">
                         <div v-for="(message, index) in contacts[selectedIndex].messages" :key="index" class="message"
-                            :class="message.status">
+                            :class="message.status" @click="">
                             <div>
                                 {{message.message}}
                             </div>
                             <div class="message-time">
                                 {{message.date}}
+                            </div>
+                            <div class="message-menu">
+                                <div>Info messaggio</div>
+                                <div>Cancella messaggio</div>
                             </div>
                         </div>
                     </div>

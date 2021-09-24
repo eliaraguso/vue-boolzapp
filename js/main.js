@@ -124,8 +124,6 @@ const app = new Vue({
             }
             );
         }
-
-
     }
 
 });
